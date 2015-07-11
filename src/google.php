@@ -20,7 +20,7 @@ class Google
 		    5
 	    );
 
-	    print_r($result);
+	    return $result;
 
 	}
 

@@ -5,7 +5,10 @@ if (isset($_GET['goproxy']) AND
 	$_GET['goproxy'] == get_option('go_connector_api_key')) 
 {
 
-	\Goproxy\Google::search_keyword($_GET['kw']);
+	$result = \Goproxy\Google::search_keyword($_GET['kw']);
+
+	echo $_SERVER['SERVER_ADDR'] . ':goproxyip:';
+	print_r($result);
 
 	die();
 }

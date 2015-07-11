@@ -3,7 +3,7 @@ namespace Goproxy;
 /*
 	Plugin Name: GoProxy
 	Description: It does what it has to do..
-	Version: 1.0.0
+	Version: 1.0.2
 */
 
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
