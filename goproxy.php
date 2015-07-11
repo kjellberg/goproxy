@@ -16,10 +16,10 @@ require_once( SEARCH_PROXY_ROOT . 'src/google.php' );
 require_once( SEARCH_PROXY_ROOT . 'src/proxy.php' );
 
 require 'plugin-update-checker/plugin-update-checker.php';
-$className = PucFactory::getLatestClassVersion('PucGitHubChecker');
+$className = \PucFactory::getLatestClassVersion('PucGitHubChecker');
 
 $myUpdateChecker = new $className(
-    'https://github.com/user-name/plugin-repo-name/',
+    'https://github.com/kjellberg/goproxy',
     __FILE__,
     'master'
 );
